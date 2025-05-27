@@ -5,6 +5,7 @@ import 'package:meal_app/data/dummy_data.dart';
 import 'package:meal_app/models/meal.dart';
 import 'package:meal_app/screens/categories.dart';
 import 'package:meal_app/screens/meals.dart';
+import 'package:meal_app/screens/tabs.dart';
 
 final theme = ThemeData(
   useMaterial3: true,
@@ -27,7 +28,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: theme,
-      home: const CategoriesScreen(), // Todo ...,
+      home: const TabsScreen(), // Todo ...,
     );
   }
 }
