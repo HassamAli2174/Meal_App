@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:meal_app/data/dummy_data.dart';
-import 'package:meal_app/models/meal.dart';
-import 'package:meal_app/provider/favorite_provider.dart';
+// import 'package:meal_app/data/dummy_data.dart';
+// import 'package:meal_app/models/meal.dart';
+import 'package:meal_app/provider/favorites_provider.dart';
+import 'package:meal_app/provider/filters_provider.dart';
 import 'package:meal_app/provider/meals_provider.dart';
 import 'package:meal_app/screens/categories.dart';
 import 'package:meal_app/screens/filters.dart';
@@ -27,7 +28,7 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
   Map<Filter, bool> _selectedFilters = KInitialFilters;
   int _selectedPageIndex = 0;
   // final List<Meal> _favMeals = [];
-  
+
   // void _showInfoMessage(String message) {
   //   ScaffoldMessenger.of(context).clearSnackBars();
   //   ScaffoldMessenger.of(
